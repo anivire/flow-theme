@@ -1,0 +1,14 @@
+#main .ace_gutter-active-line {
+  color: var(--fg-color-01);
+  background-color: transparent !important;
+}
+
+.ace_active-line {
+  background-color: var(--linter-select-01) !important;
+  border: 1.5px solid var(--linter-select-02);
+  border-right: 0px;
+}
+
+.ace_selection {
+  background-color: var(--linter-select-03) !important;
+}

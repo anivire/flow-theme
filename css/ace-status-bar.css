@@ -1,0 +1,42 @@
+.ace_status-bar {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center;
+  position: relative !important;
+  font-size: 13px;
+  color: var(--fg-color-02) !important;
+  background-color: var(--bg-color-03) !important;
+  z-index: 5 !important;
+  text-align: center !important;
+  height: var(--tabs-height) !important;
+  border: none !important;
+  /* position: absolute; */
+  /* bottom: 0; */
+  overflow: visible;
+  padding: 15px !important;
+}
+
+.context-pre {
+  display: none !important;
+}
+
+.ace_status-comp {
+  border-color: var(--stroke-color-01) !important;
+}
+
+.ace_status-hint > span {
+  min-width: 0 !important;
+}
+
+.ace_status-hint .context,
+.ace_status-comp {
+  padding-left: 5px !important;
+}
+
+.ace_status-bar .ace_status-hint {
+  padding-right: 0px !important;
+}
+
+.ace_status-comp {
+  border: none !important;
+}

@@ -1,0 +1,95 @@
+#app .ace_gutter-define,
+#main .ace_gutter {
+  background-color: var(--bg-color-02);
+  color: var(--fg-color-02);
+}
+
+#main .ace_gutter {
+  border: none;
+}
+
+#ace_container {
+  background-color: var(--bg-color-02);
+}
+
+#main .ace-tm {
+  background-color: var(--bg-color-02);
+}
+
+
+.ace_editor.ace-tm {
+  top: 1px !important;
+  border: none !important;
+}
+
+.ace_gutter {
+  overflow: visible !important;
+  display: block;
+  border: none !important;
+  text-align: center;
+}
+
+.ace_fold-widget.ace_start.ace_open {
+  display: hidden !important;;
+  background-image: none !important;
+}
+
+.ace_gutter-cell:hover .ace_fold-widget.ace_start.ace_open {
+  visibility: visible;
+  transition: visibility 0.2s ease-in;
+}
+
+.ace_gutter-cell {
+  padding: none !important;
+  padding-right: auto !important;
+  padding-left: auto !important;
+  text-align: center;
+  padding: 0 15px 0 15px !important;
+}
+
+.ace_gutter-active-line.ace_gutter-cell, .ace_gutter-cell  {
+  padding-top: 1px !important;
+}
+
+.ace_fold-widget.ace_start.ace_open {
+  visibility: hidden;
+  background-image: none;
+}
+
+.ace_gutter-cell:hover .ace_fold-widget.ace_start.ace_open {
+  visibility: visible;
+  transition: visibility 0.2s ease-in;
+}
+
+.ace_editor.ace-tm {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.ace_text-input {
+  margin-bottom: 25px !important;
+}
+
+.ace_scrollbar::-webkit-scrollbar {
+  background: transparent;
+  width: 7px;
+  height: 7px;
+}
+
+.ace_scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.ace_scrollbar::-webkit-scrollbar-thumb {
+  background: var(--bg-color-04);
+  border: none;
+}
+
+.ace_scrollbar::-webkit-scrollbar-thumb:hover {
+  background: var(--fg-color-02);
+}
+
+.ace_scrollbar {
+  scrollbar-width: thin; 
+  scrollbar-color: var(--bg-color-02) transparent; 
+}

@@ -1,0 +1,58 @@
+#main {
+  background-color: var(--bg-color-04) !important;
+}
+
+.system-buttons {
+  display: flex;
+  background-color: var(--bg-color-03) !important;
+  align-items: center;
+  position: static;
+  justify-content: center;
+  height: 100%;
+  z-index: 2;
+  color: var(--fg-color-02);
+  transition: color 0.2s ease-in-out;
+}
+
+.system-button.minimize,
+.system-button.maximize,
+.system-button.close,
+.system-button.preferences {
+  height: 100% !important;
+}
+
+.system-button:hover {
+  color: var(--fg-color-01);
+  background-color: var(--bg-color-04);
+  cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 14px;
+  background: none;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--fg-color-inactive, #5C5C5E);
+  border: 4px solid var(--bg-color-01);
+}
+
+::-webkit-scrollbar-thumb:hover,
+.treeview::-webkit-scrollbar-thumb {
+  background: var(--bg-color-03);
+  border-radius: var(--border-radius);
+}
+
+::-webkit-scrollbar-thumb:active,
+.treeview::-webkit-scrollbar-thumb:active {
+  border-radius: var(--border-radius);
+}
+
+select::-webkit-scrollbar-thumb {
+  border-color: var(--bg-color-01);
+}

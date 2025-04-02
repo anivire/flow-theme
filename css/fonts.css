@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "Jetbrains NF Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/jetbrains-mono-nf.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Remix Icons";
+  font-style: normal;
+  font-weight: 400;
+  font-display: auto;
+  src: url("../fonts/remix-icon.ttf") format("truetype");
+}

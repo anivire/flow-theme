@@ -1,0 +1,187 @@
+.chrome-tabs,
+.chrome-tabs-content,
+.chrome-tab {
+  background-color: var(--bg-color-03);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chrome-tabs-dark-theme,
+.chrome-tabs-bottom-bar {
+  background-color: var(--bg-color-02);
+}
+
+#tabs, 
+.chrome-tabs.project-name.chrome-tabs-dark-theme {
+  height: var(--tabs-height) !important;
+  box-shadow: none !important;
+}
+
+/*  */
+.chrome-tabs-content {
+  padding: 0 15px 0 0 !important;
+  display: flex !important;
+  flex-direction: row !important;
+  overflow-x: auto !important;
+  transition: max-height 0.2s ease-in-out;
+  transition-delay: 300ms, 0ms;
+}
+
+.chrome-tabs-content::-webkit-scrollbar {
+  height: 0px;
+  background: transparent !important;
+  transition: height 0.2s ease-in-out;
+}
+
+/* .chrome-tabs-content::-webkit-scrollbar-track {
+  background: none;
+}
+
+.chrome-tabs-content::-webkit-scrollbar-thumb {
+  background: transparent !important;
+  border: none;
+}
+
+.chrome-tabs-content:hover::-webkit-scrollbar {
+  height: 5px; 
+}
+
+.chrome-tabs-content:hover::-webkit-scrollbar-thumb {
+  background: var(--bg-color-04) !important;
+}
+
+.chrome-tabs-content:active::-webkit-scrollbar-thumb {
+  background: var(--bg-color-04) !important;
+} */
+
+/*  */
+
+.chrome-tabs-bottom-bar {
+  display: none;
+}
+
+#tabs.chrome-tabs.has-system-buttons.chrome-tabs-dark-theme {
+  padding: 0 !important;
+  border: none !important;
+}
+
+.chrome-tabs.has-system-buttons.chrome-tabs-dark-theme {
+  gap: 0 !important;
+}
+
+.chrome-tabs.project-name.chrome-tabs-dark-theme {
+  position: absolute;
+  width: calc(100% + 5px);
+  right: -5px;
+}
+
+.chrome-tab {
+  width: fit-content;
+  position: relative !important;
+  height: 100% !important;
+  transform: none !important;
+  background-color: transparent;
+  width: fit-content !important;
+  min-width: 145px !important;
+}
+
+.chrome-tab-title-text {
+  padding-left: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+}
+
+.chrome-tab-background,
+.chrome-tab-favicon {
+  display: none !important;
+}
+
+.chrome-tab-close {
+  visibility: hidden;
+  top: 50% !important;
+  transform: translateY(-50%);
+  border-radius: 3px !important;
+  width: 20px !important;
+  height: 20px !important;
+  padding: 3px;
+}
+
+.chrome-tab-close::before {
+  background: none;
+  line-height: inherit;
+}
+
+.chrome-tab-close:hover {
+  background: none;
+  cursor: pointer;
+  background: var(--bg-color-04) !important;
+}
+
+
+.chrome-tab.chrome-tab-current .chrome-tab-close {
+  visibility: visible;
+}
+
+.chrome-tab:hover .chrome-tab-close {
+  visibility: visible;
+}
+
+.chrome-tab.chrome-tab-current {
+  background-color: var(--bg-color-02);
+}
+
+.chrome-tab-favicon {
+  display: none !important;
+}
+
+.chrome-tab:hover {
+  cursor: pointer;
+}
+
+.chrome-tab-background > svg {
+  display: none;
+}
+
+.chrome-tab-title {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.chrome-tab-title .chrome-tab-title-text {
+  text-align: center;
+  vertical-align: middle;
+}
+
+.chrome-tabs.has-system-buttons.chrome-tabs-dark-theme {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+}
+
+#splitter-td {
+  background-color: var(--bg-color-01) !important;
+  border: none !important;
+  padding-top: 36px !important;
+  transition: background-color 0.2s ease-in-out;
+  transition-delay: 1000ms, 0ms;
+}
+
+#splitter-td:hover {
+  background-color: var(--bg-color-03) !important;
+}
+
+#splitter-td:active {
+  background-color: var(--bg-color-03) !important;
+}
+
+/* 
+  This is uncontrollable class by css,
+  needed js extension or smth else
+*/
+.chrome-tabs-hint {
+  display: none !important;
+}

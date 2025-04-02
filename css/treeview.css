@@ -1,0 +1,150 @@
+.treeview {
+  background-color: var(--bg-color-01);
+  color: var(--fg-color-02);
+  padding: 0 !important;
+}
+
+.dir,
+.item,
+.items,
+.header {
+  border: none !important;
+}
+
+.treeview .dir {
+  overflow: hidden;
+  /* border: 1px solid transparent !important; */
+}
+
+.treeview .dir:not(.open) {
+  border-radius: var(--border-radius);
+  padding: 0;
+  margin: 0;
+}
+
+.dir,
+.item {
+  margin: 5px !important;
+}
+
+.treeview .items .dir.open {
+  background-color: var(--bg-color-02);
+  border: 1px solid var(--stroke-color-01) !important;
+  border-radius: var(--border-radius);
+}
+
+.treeview .dir.open > .header {
+  background-color: var(--stroke-color-01);
+}
+
+.treeview .dir .header {
+  border: 1px solid transparent;
+  overflow: hidden;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.treeview .dir .items {
+  padding-left: 0;
+}
+
+/* .treeview .dir .items:not(:empty) {
+  padding: 3px;
+} */
+
+/* .treeview .dir .items > .header {
+  padding-left: 15px;
+} */
+
+.treeview .item {
+  display: flex;
+  align-items: center;
+  border-radius: var(--border-radius);
+  /* padding: 6px 20px; */
+  padding: 5px;
+}
+
+.treeview .item[data-kind="project"] {
+  flex-direction: row;
+}
+
+.treeview .item span,
+.treeview .header span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.treeview .item span {
+  max-width: calc(100% - 25px);
+}
+
+.treeview .header span {
+  max-width: calc(100% - 35px);
+}
+
+.treeview .header:not(.hidden) {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Hover and other */
+
+.treeview .header:not(:active):hover,
+.treeview .dir .header:not(:active):hover,
+.treeview .item:not(:active):hover {
+  background-color: var(--accent-color-01);
+  color: var(--fg-color-01);
+  transition: color 0.1s ease-in;
+}
+
+.treeview .dir.open > .header:active {
+  background-color: var(--accent-color-01);
+  color: var(--fg-color-01);
+  transition: color 0.1s ease-in;
+}
+
+.treeview .header:hover > span,
+.treeview .item:hover > span,
+.treeview .header:active > span,
+.treeview .item:active > span {
+  background: none;
+}
+
+/* Hide scrollbar */
+
+.bottom.treeview {
+  position: relative;
+  overflow-y: auto; 
+  margin-top: var(--tabs-height) !important;
+}
+
+.bottom.treeview::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* .bottom.treeview:hover::-webkit-scrollbar {
+  width: 10px; 
+} */
+
+.bottom.treeview::-webkit-scrollbar-track {
+  background: none;
+}
+
+.bottom.treeview::-webkit-scrollbar-thumb {
+  background: var(--bg-color-02);
+  border-radius: var(--border-radius);
+  border: none;
+}
+
+.bottom.treeview::-webkit-scrollbar-thumb:hover {
+  background: var(--fg-color-02);
+}
+
+.bottom.treeview {
+  scrollbar-width: thin; 
+  scrollbar-color: var(--bg-color-02) transparent; 
+}

@@ -1,0 +1,19 @@
+:root {
+  --bg-color-01: #090909;
+  --bg-color-02: #101010;
+  --bg-color-03: #181818;
+  --bg-color-04: #302e2e;
+
+  --fg-color-01: #F2ECEF;
+  --fg-color-02: #5C5C5E;
+  --stroke-color-01: #202020;
+  --accent-color-01: #202020;
+  --accent-color-03: #707eff;
+
+  --border-radius: 10px;
+  --tabs-height: 35px; 
+
+  --linter-select-01: #1f1f1f;
+  --linter-select-02: #2f2f2f;
+  --linter-select-03: #3f3f3f;
+}
