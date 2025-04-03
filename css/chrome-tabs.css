@@ -85,7 +85,7 @@
   width: fit-content !important;
   min-width: 145px !important;
   /* border-right: 2px solid var(--bg-color-02) !important; */
-  border-radius: var(--border-radius) var(--border-radius) 0  0 !important;
+  /* border-radius: var(--border-radius) var(--border-radius) 0  0 !important; */
 }
 
 .chrome-tab-title-text {
