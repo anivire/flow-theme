@@ -47,10 +47,6 @@
   padding: 0 15px 0 15px !important;
 }
 
-.ace_gutter-active-line.ace_gutter-cell, .ace_gutter-cell  {
-  padding-top: 1px !important;
-}
-
 .ace_fold-widget.ace_start.ace_open {
   visibility: hidden;
   background-image: none;

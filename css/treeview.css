@@ -11,6 +11,13 @@
   border: none !important;
 }
 
+.header,
+.item {
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
+  font-size: 14px !important;
+}
+
 .treeview .dir {
   overflow: hidden;
 }
@@ -22,6 +29,10 @@
 
 .treeview .items .dir.open > .items {
   border-left: 1.5px solid var(--stroke-color-01) !important;
+}
+
+.bottom.treeview .item[data-kind="project"] {
+  padding: 10px !important;
 }
 
 .treeview .dir .header {
@@ -72,13 +83,15 @@
 .treeview .header:not(:active):hover,
 .treeview .dir .header:not(:active):hover,
 .treeview .item:not(:active):hover {
-  background: linear-gradient(to right, var(--bg-color-02), transparent);
+  background: linear-gradient(to right, var(--bg-color-03), transparent);
+  /* background-color: var(--bg-color-03) !important; */
   color: var(--fg-color-01);
   transition: color 0.1s ease-in;
 }
 
 .treeview .dir.open > .header:active {
-  background: linear-gradient(to right, var(--bg-color-02), transparent);
+  background: linear-gradient(to right, var(--bg-color-03), transparent);
+  /* background-color: var(--bg-color-03) !important; */
   color: var(--fg-color-01);
   transition: color 0.1s ease-in;
 }

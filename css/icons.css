@@ -265,3 +265,16 @@
   content: "\EA6E";
   padding-right: 5px !important;
 }
+
+.ace_status-comp {
+  color: var(--fg-color-01) !important;
+}
+
+.ace_status-comp:not(:empty)::before {
+  font-family: "Remix Icons" !important;
+  display: inline-block;
+  text-align: center; 
+  background: none;
+  content: "\EA6E";
+  padding-right: 5px !important;
+}

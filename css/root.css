@@ -17,4 +17,17 @@
   --linter-select-01: #1f1f1f;
   --linter-select-02: #2f2f2f;
   --linter-select-03: #3f3f3f;
+
+  --default-text-01: #5C5C5E;
+  --default-text-02: #F2ECEF;
+
+  --primary-text-01: #FFDD9C;
+  --primary-text-02: #E6A7FF;
+  --primary-text-03: #A6FF9E;
+  --primary-text-04: #9EB2FF;
+
+  --error-bg-01: #5E1A1B;
+  
+  --error-text-01: #FF9C9D;
+  --warn-text-01: #FFDD9C;
 }

@@ -32,6 +32,10 @@
   border-color: var(--stroke-color-01) !important;
 }
 
+.ace_status-comp[title*="error"]:not(:empty) {
+  color: var(--error-text-01) !important;
+}
+
 .ace_status-hint > span {
   min-width: 0 !important;
 }

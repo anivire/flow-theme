@@ -9,6 +9,80 @@
   border-right: 0px;
 }
 
+.ace_error-line {
+  background-color: var(--error-bg-01) !important;
+  opacity: 50% !important;
+}
+
+.ace_gutter-cell.ace_error {
+  background-color: var(--error-bg-01) !important;
+  background-image: none !important;
+  color: var(--default-text-02) !important;
+}
+
 .ace_selection {
   background-color: var(--linter-select-03) !important;
 }
+
+#app .ace_gutter-define:not(:first-child) {
+	box-shadow: none;
+}
+#app .ace_gutter-define {
+  color: var(--default-text-02);
+}
+.ace_editor.ace_autocomplete .ace_completion-highlight {
+  color: var(--default-text-02);
+}
+
+#app .ace-tm .ace_keyword,
+#app .ace-tm .ace_type,
+#app .ace-tm .ace_curly.ace_paren,
+#app .ace-tm .ace_quasi.ace_paren {
+	font-weight: normal;
+}
+#app .ace_gutter,
+#app .ace_status-bar { color: var(--default-text-01); } 
+#app .ace-tm { color: var(--default-text-01); } /*  && () . : !=  */
+#app .ace-tm .ace_preproc { color: var(--default-text-01); } /* #define, #event, #macro */
+#app .ace-tm .ace_keyword { color: var(--default-text-01); } /* Switch Case Break Return If Else Until */
+
+#app .ace-tm .ace_local { color: var(--default-text-02); } /* Local variables that have been initialized with var */
+#app .ace-tm .ace_sublocal { color: var(--default-text-02); } /* ? */
+
+#app .ace-tm .ace_field { color: var(--default-text-02); } /* Variable owned by other */
+#app .ace-tm .ace_localfield { color: var(--default-text-02); } /* Variable owned by self */
+#app .ace-tm .ace_globalfield { color: var(--default-text-02); } /* Variable that is global */
+#app .ace-tm .ace_enumfield { color: var(--default-text-02); } /* Enum Constant */
+#app .ace-tm .ace_variable { color: var(--default-text-02); } /* Built-in GM variable */
+#app .ace-tm .ace_curly.ace_paren { color: var(--default-text-02); } /* Braces {  } */
+
+#app .ace-tm .ace_regionname,
+#app .ace-tm .ace_sectionname,
+#app .ace-tm .ace_momentname,
+#app .ace-tm .ace_scriptname,
+#app .ace-tm .ace_eventkeyname,
+#app .ace-tm .ace_eventname { color: var(--primary-text-02); } /* Region, script, events */
+#app .ace-tm .ace_macro { color: var(--primary-text-02); } /* Macro used in code */
+#app .ace-tm .ace_macroname { color: var(--primary-text-02); }  /* Macro Name in "All Configurations" */
+#app .ace-tm .ace_extmacro { color: var(--primary-text-02); } /* ? */
+#app .ace-tm .ace_numeric { color: var(--primary-text-02); } /* Basic numbers */
+
+#app .ace-tm .ace_constant { color: var(--primary-text-01); } /* GM built-in values: c_black, true, false, bm_subtract */
+#app .ace-tm .ace_comment.ace_meta { color: var(--primary-text-01); }
+
+#app .ace-tm .ace_string { color: var(--primary-text-01); } /* String text */
+#app .ace-tm .ace_momenttime { color: var(--primary-text-01); } /* Timelines */
+#app .ace-tm .ace_asset { color: var(--primary-text-01); } /* Objects, sprites */
+
+#app .ace-tm .ace_comment { color: var(--primary-text-03); } /* Comments */
+#app .ace-tm .ace_eventtext { color: var(--primary-text-03); } /* Renamed Object Actions */
+#app .ace-tm .ace_namespace { color: var(--primary-text-03); } /* ? */
+
+#app .ace-tm .ace_enum { color: #A2D0C5; } /* Enum Variable */
+
+#app .ace-tm .ace_globalvar { color: var(--error-text-01); } /* ? */
+#app .ace-tm .ace_type { color: var(--error-text-01); } /* ? */
+
+#app .ace-tm .ace_function { color: var(--primary-text-04); } /* Basic GM Function */
+#app .ace-tm .ace_extfunction { color: var(--primary-text-04); } /* ? */
+#app .ace-tm .ace_asset.ace_script { color: var(--primary-text-04); } /* Scripts */
