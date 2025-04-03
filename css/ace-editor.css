@@ -16,11 +16,11 @@
   background-color: var(--bg-color-02);
 }
 
-
-.ace_editor.ace-tm {
+/* bugged tootips */
+/* .ace_editor.ace-tm {
   top: 1px !important;
   border: none !important;
-}
+} */
 
 .ace_gutter {
   overflow: visible !important;
@@ -61,10 +61,11 @@
   transition: visibility 0.2s ease-in;
 }
 
-.ace_editor.ace-tm {
+/* bugged tootips */
+/* .ace_editor.ace-tm {
   display: flex !important;
   flex-direction: column !important;
-}
+} */
 
 .ace_text-input {
   margin-bottom: 25px !important;

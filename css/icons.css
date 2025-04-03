@@ -6,8 +6,9 @@
   display: inline-block;
   background: none;
   font-size: 18px;
-  width: 18px;
-  height: 18px;
+  /* width: 18px;
+  height: 18px; */
+  width: fit-content !important;
   line-height: inherit;
 }
 
@@ -183,7 +184,7 @@
 }
 
 .context .context-txt::before {
-  font-family: "Remix Icons";
+  font-family: "Remix Icons" !important;
   display: inline-block;
   text-align: center; 
   background: none;
@@ -192,7 +193,7 @@
 }
 
 .ace_status-comp .hint::before {
-  font-family: "Remix Icons";
+  font-family: "Remix Icons" !important;
   display: inline-block;
   text-align: center; 
   background: none;

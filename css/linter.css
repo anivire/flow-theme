@@ -5,7 +5,7 @@
 
 .ace_active-line {
   background-color: var(--linter-select-01) !important;
-  border: 1.5px solid var(--linter-select-02);
+  border-left: 1px solid var(--linter-select-02);
   border-right: 0px;
 }
 

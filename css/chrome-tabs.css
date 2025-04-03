@@ -164,10 +164,11 @@
 
 #splitter-td {
   background-color: var(--bg-color-01) !important;
+  width: 16px !important;
   border: none !important;
   padding-top: 36px !important;
   transition: background-color 0.2s ease-in-out;
-  transition-delay: 1000ms, 0ms;
+  transition-delay: 300ms, 0ms;
 }
 
 #splitter-td:hover {

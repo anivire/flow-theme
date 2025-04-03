@@ -16,6 +16,14 @@
   padding: 15px !important;
 }
 
+.context-txt {
+  float: left;
+}
+
+.context {
+  max-width: fit-content !important;
+}
+
 .context-pre {
   display: none !important;
 }

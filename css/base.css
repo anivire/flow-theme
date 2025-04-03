@@ -1,3 +1,7 @@
+* {
+  -webkit-tap-highlight-color: var(--bg-color-03) !important;
+}
+
 body {
   background-color: var(--bg-color-01);
   color: var(--fg-color-02);
