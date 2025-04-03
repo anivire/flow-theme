@@ -13,55 +13,32 @@
 
 .treeview .dir {
   overflow: hidden;
-  /* border: 1px solid transparent !important; */
 }
 
 .treeview .dir:not(.open) {
-  border-radius: var(--border-radius);
   padding: 0;
   margin: 0;
 }
 
-.dir,
-.item {
-  margin: 5px !important;
-}
-
-.treeview .items .dir.open {
-  background-color: var(--bg-color-02);
-  border: 1px solid var(--stroke-color-01) !important;
-  border-radius: var(--border-radius);
-}
-
-.treeview .dir.open > .header {
-  background-color: var(--stroke-color-01);
+.treeview .items .dir.open > .items {
+  border-left: 1.5px solid var(--stroke-color-01) !important;
 }
 
 .treeview .dir .header {
-  border: 1px solid transparent;
+  /* border: 1px solid transparent; */
   overflow: hidden;
   padding: 5px;
   display: flex;
   align-items: center;
 }
 
-.treeview .dir .items {
-  padding-left: 0;
-}
-
-/* .treeview .dir .items:not(:empty) {
-  padding: 3px;
-} */
-
-/* .treeview .dir .items > .header {
+.treeview .items {
   padding-left: 15px;
-} */
+}
 
 .treeview .item {
   display: flex;
   align-items: center;
-  border-radius: var(--border-radius);
-  /* padding: 6px 20px; */
   padding: 5px;
 }
 
@@ -95,13 +72,13 @@
 .treeview .header:not(:active):hover,
 .treeview .dir .header:not(:active):hover,
 .treeview .item:not(:active):hover {
-  background-color: var(--accent-color-01);
+  background: linear-gradient(to right, var(--bg-color-02), transparent);
   color: var(--fg-color-01);
   transition: color 0.1s ease-in;
 }
 
 .treeview .dir.open > .header:active {
-  background-color: var(--accent-color-01);
+  background: linear-gradient(to right, var(--bg-color-02), transparent);
   color: var(--fg-color-01);
   transition: color 0.1s ease-in;
 }
@@ -125,10 +102,6 @@
   width: 0;
   background: transparent;
 }
-
-/* .bottom.treeview:hover::-webkit-scrollbar {
-  width: 10px; 
-} */
 
 .bottom.treeview::-webkit-scrollbar-track {
   background: none;

@@ -1,25 +1,23 @@
 /* Closed folder */
 .treeview .dir > .header:before {
   font-family: "Remix Icons";
-  content: "\ED53";
+  content: "\EA6E\ED53";
   margin: 0 5px 0 0;
   display: inline-block;
   background: none;
-  font-size: 18px;
-  /* width: 18px;
-  height: 18px; */
+  font-size: var(--icons-font-size);
   width: fit-content !important;
   line-height: inherit;
 }
 
 /* Open folder */
 .treeview .dir .open > .header:before {
-  content: "\ED57"
+  content: "\EA4E\ED57"
 }
 
-.treeview .dir .is-empty > .header:before {
-  content: "\ED62"
-}
+/* .treeview.dir.is-empty > .header:before {
+  content: "\EA6E\ED62"
+} */
 
 .treeview .dir > .header {
   position: relative;
@@ -30,7 +28,7 @@
 .system-buttons {
   font-family: "Remix Icons";
   background: none;
-  font-size: 18px;
+  font-size: var(--icons-font-size);
   line-height: inherit;
 }
 
@@ -67,7 +65,7 @@
   color: #888;
 } */
 
-.treeview .dir > .header::after {
+.treeview .dir .header::after {
   font-family: "Remix Icons";
   content: "\EB7C";
   position: absolute;
@@ -90,9 +88,9 @@
   margin: 0 5px 0 0;
   display: inline-block;
   background: none;
-  font-size: 18px;
-  width: 18px;
-  height: 18px;
+  font-size: var(--icons-font-size);
+  width: var(--icons-font-size);
+  height: var(--icons-font-size);
   line-height: inherit;
 }
 
@@ -103,8 +101,8 @@
 .treeview .item[data-thumb]:before {
   content: "" !important;
   border-radius: 3px;
-  height: 18px;
-  width: 18px;
+  height: var(--icons-font-size);
+  width: var(--icons-font-size);
   image-rendering: pixelated;
 }
 
@@ -116,71 +114,138 @@
   content: "\F3A6";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Notes"]:before {
-  content: "\F19A";
+/* Notes */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Notes"]:before {
+  content: "\EA6E\F19A";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Notes"]:before {
+  content: "\EA4E\F19A";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Particle Systems"]:before, 
-.treeview > .dir > .items > .dir > .header[title="Particles"]:before {
-  content: "\F36C";
+/* Particle Systems / Particles */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Particle Systems"]:before, 
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Particles"]:before {
+  content: "\EA6E\F36C";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Particle Systems"]:before, 
+.treeview > .dir > .items > .dir.open > .header[title="Particles"]:before {
+  content: "\EA4E\F36C";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Fonts"]:before, 
-.treeview > .dir > .items > .dir > .header[title="Font"]:before {
-  content: "\F391";
+/* Fonts / Font */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Fonts"]:before, 
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Font"]:before {
+  content: "\EA6E\F391";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Fonts"]:before, 
+.treeview > .dir > .items > .dir.open > .header[title="Font"]:before {
+  content: "\EA4E\F391";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Sounds"]:before, 
-.treeview > .dir > .items > .dir > .header[title="Sound"]:before {
-  content: "\F2A1";
+/* Sounds / Sound */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Sounds"]:before, 
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Sound"]:before {
+  content: "\EA6E\F2A1";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Sounds"]:before, 
+.treeview > .dir > .items > .dir.open > .header[title="Sound"]:before {
+  content: "\EA4E\F2A1";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Images"]:before, 
-.treeview > .dir > .items > .dir > .header[title="Sprites"]:before {
-  content: "\F5ED";
+/* Images / Sprites */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Images"]:before, 
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Sprites"]:before {
+  content: "\EA6E\F5ED";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Images"]:before, 
+.treeview > .dir > .items > .dir.open > .header[title="Sprites"]:before {
+  content: "\EA4E\F5ED";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Sequences"]:before {
-  content: "\EB8E";
+/* Sequences */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Sequences"]:before {
+  content: "\EA6E\EB8E";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Sequences"]:before {
+  content: "\EA4E\EB8E";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Tile Sets"]:before,
-.treeview > .dir > .items > .dir > .header[title="Tiles"]:before {
-  content: "\EE7C";
+/* Tile Sets / Tiles */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Tile Sets"]:before,
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Tiles"]:before {
+  content: "\EA6E\EE7C";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Tile Sets"]:before,
+.treeview > .dir > .items > .dir.open > .header[title="Tiles"]:before {
+  content: "\EA4E\EE7C";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Rooms"]:before {
-  content: "\F578";
+/* Rooms */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Rooms"]:before {
+  content: "\EA6E\F578";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Rooms"]:before {
+  content: "\EA4E\F578";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Options"]:before,
-.treeview > .dir > .items > .dir > .header[title="Settings"]:before {
-  content: "\ED75";
+/* Options / Settings */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Options"]:before,
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Settings"]:before {
+  content: "\EA6E\ED75";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Options"]:before,
+.treeview > .dir > .items > .dir.open > .header[title="Settings"]:before {
+  content: "\EA4E\ED75";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Extensions"]:before,
-.treeview > .dir > .items > .dir > .header[title="Libraries"]:before {
-  content: "\F018";
+/* Extensions / Libraries */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Extensions"]:before,
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Libraries"]:before {
+  content: "\EA6E\F018";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Extensions"]:before,
+.treeview > .dir > .items > .dir.open > .header[title="Libraries"]:before {
+  content: "\EA4E\F018";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Objects"]:before {
-  content: "\F44F";
+/* Objects */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Objects"]:before {
+  content: "\EA6E\F44F";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Objects"]:before {
+  content: "\EA4E\F44F";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Timelines"]:before {
-  content: "\EDC0";
+/* Timelines */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Timelines"]:before {
+  content: "\EA6E\EDC0";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Timelines"]:before {
+  content: "\EA4E\EDC0";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Animation Curves"]:before {
-  content: "\EBC5";
+/* Animation Curves */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Animation Curves"]:before {
+  content: "\EA6E\EBC5";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Animation Curves"]:before {
+  content: "\EA4E\EBC5";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Shaders"]:before {
-  content: "\F3E4";
+/* Shaders */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Shaders"]:before {
+  content: "\EA6E\F3E4";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Shaders"]:before {
+  content: "\EA4E\F3E4";
 }
 
-.treeview > .dir > .items > .dir > .header[title="Scripts"]:before {
-  content: "\ECF8";
+/* Scripts */
+.treeview > .dir > .items > .dir:not(.open) > .header[title="Scripts"]:before {
+  content: "\EA6E\ECF8";
+}
+.treeview > .dir > .items > .dir.open > .header[title="Scripts"]:before {
+  content: "\EA4E\ECF8";
 }
 
 .context .context-txt::before {
