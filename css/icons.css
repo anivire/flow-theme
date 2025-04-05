@@ -114,6 +114,18 @@
   content: "\F3A6";
 }
 
+.chrome-tab-title-text::before {
+  font-family: "Remix Icons";
+  content: "\ECC2";
+  margin: 0 5px 0 0;
+  display: inline-block;
+  background: none;
+  font-size: var(--icons-font-size);
+  width: var(--icons-font-size);
+  height: var(--icons-font-size);
+  line-height: inherit;
+}
+
 /* Notes */
 .treeview > .dir > .items > .dir:not(.open) > .header[title="Notes"]:before {
   content: "\EA6E\F19A";

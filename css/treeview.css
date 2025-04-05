@@ -5,11 +5,17 @@
 }
 
 .dir,
-.item,
+.item, 
 .items,
 .header {
   border: none !important;
 }
+
+/* .bottom.treeview .dir > .header,
+.bottom.treeview .dir > .dir,
+.bottom.treeview .dir > .dir > .header {
+  border: none !important;
+} */
 
 .header,
 .item {
@@ -27,16 +33,7 @@
   margin: 0;
 }
 
-.treeview .items .dir.open > .items {
-  border-left: 1.5px solid var(--stroke-color-01) !important;
-}
-
-.bottom.treeview .item[data-kind="project"] {
-  padding: 10px !important;
-}
-
 .treeview .dir .header {
-  /* border: 1px solid transparent; */
   overflow: hidden;
   padding: 5px;
   display: flex;

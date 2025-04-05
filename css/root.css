@@ -1,22 +1,22 @@
 :root {
-  --bg-color-01: #090909;
-  --bg-color-02: #101010;
-  --bg-color-03: #181818;
-  --bg-color-04: #302e2e;
+  --bg-color-01: #121212;
+  --bg-color-02: #1a1a1a;
+  --bg-color-03: #222222;
+  --bg-color-04: #3a3a3a;
 
-  --fg-color-01: #F2ECEF;
-  --fg-color-02: #5C5C5E;
-  --stroke-color-01: #202020;
-  --accent-color-01: #202020;
-  --accent-color-03: #707eff;
+  --fg-color-01: #FFFFFF;
+  --fg-color-02: #6C6C6E;
+  --stroke-color-01: #2a2a2a;
+  --accent-color-01: #2a2a2a;
+  --accent-color-03: #808eff;
 
   --border-radius: 10px;
   --tabs-height: 35px; 
   --icons-font-size: 15px;
 
-  --linter-select-01: #1f1f1f;
-  --linter-select-02: #2f2f2f;
-  --linter-select-03: #3f3f3f;
+  --linter-select-01: #292929;
+  --linter-select-02: #393939;
+  --linter-select-03: #494949;
 
   --default-text-01: #5C5C5E;
   --default-text-02: #F2ECEF;
@@ -27,6 +27,10 @@
   --primary-text-04: #9EB2FF;
 
   --error-bg-01: #5E1A1B;
+  --error-bg-02: #3e1c1c;
+
+  --warn-bg-01: #694804;
+  --warn-bg-02: #403826;
   
   --error-text-01: #FF9C9D;
   --warn-text-01: #FFDD9C;

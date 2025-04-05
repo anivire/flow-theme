@@ -18,7 +18,6 @@
   box-shadow: none !important;
 }
 
-/*  */
 .chrome-tabs-content {
   padding: 0 15px 0 0 !important;
   display: flex !important;
@@ -96,8 +95,7 @@
   width: 100%;
 }
 
-.chrome-tab-background,
-.chrome-tab-favicon {
+.chrome-tab-background {
   display: none !important;
 }
 
@@ -133,6 +131,14 @@
 
 .chrome-tab.chrome-tab-current {
   background-color: var(--bg-color-02);
+}
+
+.chrome-tab.chrome-tab-current .chrome-tab-title .chrome-tab-title-text {
+  color: var(--fg-color-01) !important;
+}
+
+.chrome-tab .chrome-tab-title .chrome-tab-title-text {
+  color: var(--fg-color-02) !important;
 }
 
 .chrome-tab-favicon {
