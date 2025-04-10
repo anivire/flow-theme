@@ -12,7 +12,7 @@
   background-color: var(--bg-color-02);
 }
 
-#tabs, 
+#tabs,
 .chrome-tabs.project-name.chrome-tabs-dark-theme {
   height: var(--tabs-height) !important;
   box-shadow: none !important;
@@ -119,7 +119,6 @@
   cursor: pointer;
   background: var(--bg-color-04) !important;
 }
-
 
 .chrome-tab.chrome-tab-current .chrome-tab-close {
   visibility: visible;

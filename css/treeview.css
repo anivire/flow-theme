@@ -5,7 +5,7 @@
 }
 
 .dir,
-.item, 
+.item,
 .items,
 .header {
   border: none !important;
@@ -50,7 +50,7 @@
   padding: 5px;
 }
 
-.treeview .item[data-kind="project"] {
+.treeview .item[data-kind='project'] {
   flex-direction: row;
 }
 
@@ -104,7 +104,7 @@
 
 .bottom.treeview {
   position: relative;
-  overflow-y: auto; 
+  overflow-y: auto;
   margin-top: var(--tabs-height) !important;
 }
 
@@ -128,6 +128,6 @@
 }
 
 .bottom.treeview {
-  scrollbar-width: thin; 
-  scrollbar-color: var(--bg-color-02) transparent; 
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-color-02) transparent;
 }

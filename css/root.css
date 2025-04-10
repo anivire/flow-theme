@@ -1,37 +1,37 @@
 :root {
-  --bg-color-01: #121212;
+  --bg-color-01: #151515;
   --bg-color-02: #1a1a1a;
   --bg-color-03: #222222;
   --bg-color-04: #3a3a3a;
 
-  --fg-color-01: #FFFFFF;
-  --fg-color-02: #6C6C6E;
+  --fg-color-01: #ffffff;
+  --fg-color-02: #6c6c6e;
   --stroke-color-01: #2a2a2a;
   --accent-color-01: #2a2a2a;
   --accent-color-03: #808eff;
 
   --border-radius: 10px;
-  --tabs-height: 35px; 
+  --tabs-height: 35px;
   --icons-font-size: 15px;
 
   --linter-select-01: #292929;
   --linter-select-02: #393939;
   --linter-select-03: #494949;
 
-  --default-text-01: #5C5C5E;
-  --default-text-02: #F2ECEF;
+  --default-text-01: #5c5c5e;
+  --default-text-02: #f2ecef;
 
-  --primary-text-01: #FFDD9C;
-  --primary-text-02: #E6A7FF;
-  --primary-text-03: #A6FF9E;
-  --primary-text-04: #9EB2FF;
+  --primary-text-01: #ffdd9c;
+  --primary-text-02: #e6a7ff;
+  --primary-text-03: #a6ff9e;
+  --primary-text-04: #9eb2ff;
 
-  --error-bg-01: #5E1A1B;
+  --error-bg-01: #5e1a1b;
   --error-bg-02: #3e1c1c;
 
   --warn-bg-01: #694804;
   --warn-bg-02: #403826;
-  
-  --error-text-01: #FF9C9D;
-  --warn-text-01: #FFDD9C;
+
+  --error-text-01: #ff9c9d;
+  --warn-text-01: #ffdd9c;
 }

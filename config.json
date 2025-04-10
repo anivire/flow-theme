@@ -1,6 +1,6 @@
 {
   "parentTheme": "dark",
-	"stylesheets": [
+  "stylesheets": [
     "css/root.css",
     "css/base.css",
     "css/ace-editor.css",
@@ -10,7 +10,9 @@
     "css/treeview.css",
     "css/ace-status-bar.css",
     "css/icons.css",
-    "css/linter.css"
+    "css/linter.css",
+    "ext/gmedit-presence.css",
+    "ext/rainbow-tabs.css"
   ],
   "backgroundColor": "#090909"
 }

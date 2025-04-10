@@ -1,26 +1,24 @@
-
-#main .ace_gutter-active-line:not(.ace_error):not(.ace_warning):not(.ace_gutter-define) {
+#main
+  .ace_gutter-active-line:not(.ace_error):not(.ace_warning):not(
+    .ace_gutter-define
+  ) {
   color: var(--fg-color-01);
   background-color: transparent !important;
   z-index: 1;
 }
 
-.ace_layer.ace_marker-layer .ace_active-line:not(.ace_error-line):not(.ace_warning-line):not(.ace_gutter-define) {
+.ace_layer.ace_marker-layer
+  .ace_active-line:not(.ace_error-line):not(.ace_warning-line):not(
+    .ace_gutter-define
+  ) {
   background-color: var(--linter-select-01);
   border-left: 1px solid var(--linter-select-02);
   border-right: 0px;
   z-index: 1;
 }
 
-.ace_indent-guide {
-  display: inline-block;
-  height: 100%;
-  opacity: 0.1;
-  background-color: inherit;
-}
-
 .ace_active-line {
-  background-color: var(--linter-select-01) ;
+  background-color: var(--linter-select-01);
   border-left: 1px solid var(--linter-select-02);
   border-right: 0px;
 }
@@ -49,7 +47,7 @@
 }
 
 #app .ace_gutter-define:not(:first-child) {
-	box-shadow: none;
+  box-shadow: none;
 }
 #app .ace_gutter-define {
   color: var(--default-text-02);
@@ -58,7 +56,6 @@
   color: var(--default-text-02);
 }
 
-
 #app .ace-tm {
   color: var(--fg-color-01);
   /* background-color: #1e1e1e;  */
@@ -66,18 +63,18 @@
 
 /* Gutter */
 #app .ace_gutter {
-  background-color: #1e1e1e; 
-  color: #858585; 
+  background-color: #1e1e1e;
+  color: #858585;
 }
 
 /* Active line */
 #app .ace_active-line {
-  background-color: #2c2c2c; 
+  background-color: #2c2c2c;
 }
 
 /* Active gutter line */
 #app .ace_gutter-active-line {
-  background-color: #333333; 
+  background-color: #333333;
 }
 
 /* Syntax colors */
@@ -90,43 +87,43 @@
 
 /* Staring */
 #app .ace-tm .ace_string {
-  color: #ce9178; 
+  color: #ce9178;
 }
 
 /* Functions */
 #app .ace-tm .ace_function {
-  color: #dcdcaa; 
+  color: #dcdcaa;
 }
 
 /* Vars */
 #app .ace-tm .ace_variable {
-  color: #9cdcfe; 
+  color: #9cdcfe;
 }
 
- /* Comments */
+/* Comments */
 #app .ace-tm .ace_comment {
   color: #6a9955;
   font-style: italic;
 }
 
- /* Numbers */
+/* Numbers */
 #app .ace-tm .ace_numeric {
   color: #b5cea8;
 }
 
- /* Const */
+/* Const */
 #app .ace-tm .ace_constant {
   color: #4ec9b0;
 }
 
 /* Types */
 #app .ace-tm .ace_type {
-  color: #c586c0; 
+  color: #c586c0;
 }
 
 /* Text selection */
 #app .ace_selection {
-  background-color: #264f78; 
+  background-color: #264f78;
 }
 
 /* Event */

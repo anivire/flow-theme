@@ -32,7 +32,7 @@
   border-color: var(--stroke-color-01) !important;
 }
 
-.ace_status-comp[title*="error"]:not(:empty) {
+.ace_status-comp[title*='error']:not(:empty) {
   color: var(--error-text-01) !important;
 }
 

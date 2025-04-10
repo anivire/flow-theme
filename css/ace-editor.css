@@ -29,8 +29,12 @@
   text-align: center;
 }
 
+.ace_print-margin {
+  background-color: var(--bg-color-04) !important;
+}
+
 .ace_fold-widget.ace_start.ace_open {
-  display: hidden !important;;
+  display: hidden !important;
   background-image: none !important;
 }
 
@@ -87,6 +91,6 @@
 }
 
 .ace_scrollbar {
-  scrollbar-width: thin; 
-  scrollbar-color: var(--bg-color-02) transparent; 
+  scrollbar-width: thin;
+  scrollbar-color: var(--bg-color-02) transparent;
 }

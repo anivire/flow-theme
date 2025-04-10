@@ -1,0 +1,21 @@
+.ace_status-bar .custom-status {
+  display: inline !important;
+  font-size: var(--icons-font-size, 14px);
+  line-height: inherit;
+}
+
+.ace_status-bar .custom-status.status-working:before {
+  content: '\EC8B';
+  font-family: 'Remix Icons';
+}
+
+.ace_status-bar .custom-status.status-idle:before {
+  content: '\F2DE';
+  font-family: 'Remix Icons';
+}
+
+.ace_status-bar .custom-status.status-error:before {
+  content: '\F064';
+  font-family: 'Remix Icons';
+  margin-right: 5px;
+}

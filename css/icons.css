@@ -1,7 +1,7 @@
 /* Closed folder */
 .treeview .dir > .header:before {
-  font-family: "Remix Icons";
-  content: "\EA6E\ED53";
+  font-family: 'Remix Icons';
+  content: '\EA6E\ED53';
   margin: 0 5px 0 0;
   display: inline-block;
   background: none;
@@ -12,7 +12,7 @@
 
 /* Open folder */
 .treeview .dir .open > .header:before {
-  content: "\EA4E\ED57"
+  content: '\EA4E\ED57';
 }
 
 /* .treeview.dir.is-empty > .header:before {
@@ -26,7 +26,7 @@
 /* System icons */
 
 .system-buttons {
-  font-family: "Remix Icons";
+  font-family: 'Remix Icons';
   background: none;
   font-size: var(--icons-font-size);
   line-height: inherit;
@@ -37,25 +37,24 @@
 }
 
 .system-buttons .system-button.preferences::before {
-  content: "\EF3B";
+  content: '\EF3B';
 }
 
 .system-buttons .system-button.minimize::before {
-  content: "\F1AE";
+  content: '\F1AE';
 }
 
 .system-buttons .system-button.maximize::before {
-  content: "\F1A3";
+  content: '\F1A3';
 }
 
 .system-buttons .system-button.close::before {
-  content: "\EB99";
+  content: '\EB99';
 }
 
 .system-buttons .system-button.preferences > svg {
   display: none !important;
 }
-
 
 /* .treeview .dir > .header > .label::after {
   content: " (empty)";
@@ -66,8 +65,8 @@
 } */
 
 .treeview .dir .header::after {
-  font-family: "Remix Icons";
-  content: "\EB7C";
+  font-family: 'Remix Icons';
+  content: '\EB7C';
   position: absolute;
   right: 5px;
   top: 50%;
@@ -78,13 +77,13 @@
 
 .treeview .dir.is-empty > .header::after {
   /* content: "\F3C2"; */
-  content: "";
+  content: '';
 }
 
 /* Item */
 .treeview .item:before {
-  font-family: "Remix Icons";
-  content: "\ECC2";
+  font-family: 'Remix Icons';
+  content: '\ECC2';
   margin: 0 5px 0 0;
   display: inline-block;
   background: none;
@@ -99,24 +98,24 @@
   and pass a thumbnail image
  */
 .treeview .item[data-thumb]:before {
-  content: "" !important;
+  content: '' !important;
   border-radius: 3px;
   height: var(--icons-font-size);
   width: var(--icons-font-size);
   image-rendering: pixelated;
 }
 
-.treeview .item[data-kind="sprite"]:before {
-  content: "\EE4A";
+.treeview .item[data-kind='sprite']:before {
+  content: '\EE4A';
 }
 
-.treeview .item[data-kind="project"]:before {
-  content: "\F3A6";
+.treeview .item[data-kind='project']:before {
+  content: '\F3A6';
 }
 
 .chrome-tab-title-text::before {
-  font-family: "Remix Icons";
-  content: "\ECC2";
+  font-family: 'Remix Icons';
+  content: '\ECC2';
   margin: 0 5px 0 0;
   display: inline-block;
   background: none;
@@ -127,154 +126,190 @@
 }
 
 /* Notes */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Notes"]:before {
-  content: "\EA6E\F19A";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Notes']:before {
+  content: '\EA6E\F19A';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Notes"]:before {
-  content: "\EA4E\F19A";
+.treeview > .dir > .items > .dir.open > .header[title='Notes']:before {
+  content: '\EA4E\F19A';
 }
 
 /* Particle Systems / Particles */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Particle Systems"]:before, 
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Particles"]:before {
-  content: "\EA6E\F36C";
+.treeview
+  > .dir
+  > .items
+  > .dir:not(.open)
+  > .header[title='Particle Systems']:before,
+.treeview
+  > .dir
+  > .items
+  > .dir:not(.open)
+  > .header[title='Particles']:before {
+  content: '\EA6E\F36C';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Particle Systems"]:before, 
-.treeview > .dir > .items > .dir.open > .header[title="Particles"]:before {
-  content: "\EA4E\F36C";
+.treeview
+  > .dir
+  > .items
+  > .dir.open
+  > .header[title='Particle Systems']:before,
+.treeview > .dir > .items > .dir.open > .header[title='Particles']:before {
+  content: '\EA4E\F36C';
 }
 
 /* Fonts / Font */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Fonts"]:before, 
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Font"]:before {
-  content: "\EA6E\F391";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Fonts']:before,
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Font']:before {
+  content: '\EA6E\F391';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Fonts"]:before, 
-.treeview > .dir > .items > .dir.open > .header[title="Font"]:before {
-  content: "\EA4E\F391";
+.treeview > .dir > .items > .dir.open > .header[title='Fonts']:before,
+.treeview > .dir > .items > .dir.open > .header[title='Font']:before {
+  content: '\EA4E\F391';
 }
 
 /* Sounds / Sound */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Sounds"]:before, 
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Sound"]:before {
-  content: "\EA6E\F2A1";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Sounds']:before,
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Sound']:before {
+  content: '\EA6E\F2A1';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Sounds"]:before, 
-.treeview > .dir > .items > .dir.open > .header[title="Sound"]:before {
-  content: "\EA4E\F2A1";
+.treeview > .dir > .items > .dir.open > .header[title='Sounds']:before,
+.treeview > .dir > .items > .dir.open > .header[title='Sound']:before {
+  content: '\EA4E\F2A1';
 }
 
 /* Images / Sprites */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Images"]:before, 
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Sprites"]:before {
-  content: "\EA6E\F5ED";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Images']:before,
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Sprites']:before {
+  content: '\EA6E\F5ED';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Images"]:before, 
-.treeview > .dir > .items > .dir.open > .header[title="Sprites"]:before {
-  content: "\EA4E\F5ED";
+.treeview > .dir > .items > .dir.open > .header[title='Images']:before,
+.treeview > .dir > .items > .dir.open > .header[title='Sprites']:before {
+  content: '\EA4E\F5ED';
 }
 
 /* Sequences */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Sequences"]:before {
-  content: "\EA6E\EB8E";
+.treeview
+  > .dir
+  > .items
+  > .dir:not(.open)
+  > .header[title='Sequences']:before {
+  content: '\EA6E\EB8E';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Sequences"]:before {
-  content: "\EA4E\EB8E";
+.treeview > .dir > .items > .dir.open > .header[title='Sequences']:before {
+  content: '\EA4E\EB8E';
 }
 
 /* Tile Sets / Tiles */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Tile Sets"]:before,
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Tiles"]:before {
-  content: "\EA6E\EE7C";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Tile Sets']:before,
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Tiles']:before {
+  content: '\EA6E\EE7C';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Tile Sets"]:before,
-.treeview > .dir > .items > .dir.open > .header[title="Tiles"]:before {
-  content: "\EA4E\EE7C";
+.treeview > .dir > .items > .dir.open > .header[title='Tile Sets']:before,
+.treeview > .dir > .items > .dir.open > .header[title='Tiles']:before {
+  content: '\EA4E\EE7C';
 }
 
 /* Rooms */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Rooms"]:before {
-  content: "\EA6E\F578";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Rooms']:before {
+  content: '\EA6E\F578';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Rooms"]:before {
-  content: "\EA4E\F578";
+.treeview > .dir > .items > .dir.open > .header[title='Rooms']:before {
+  content: '\EA4E\F578';
 }
 
 /* Options / Settings */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Options"]:before,
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Settings"]:before {
-  content: "\EA6E\ED75";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Options']:before,
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Settings']:before {
+  content: '\EA6E\ED75';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Options"]:before,
-.treeview > .dir > .items > .dir.open > .header[title="Settings"]:before {
-  content: "\EA4E\ED75";
+.treeview > .dir > .items > .dir.open > .header[title='Options']:before,
+.treeview > .dir > .items > .dir.open > .header[title='Settings']:before {
+  content: '\EA4E\ED75';
 }
 
 /* Extensions / Libraries */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Extensions"]:before,
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Libraries"]:before {
-  content: "\EA6E\F018";
+.treeview
+  > .dir
+  > .items
+  > .dir:not(.open)
+  > .header[title='Extensions']:before,
+.treeview
+  > .dir
+  > .items
+  > .dir:not(.open)
+  > .header[title='Libraries']:before {
+  content: '\EA6E\F018';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Extensions"]:before,
-.treeview > .dir > .items > .dir.open > .header[title="Libraries"]:before {
-  content: "\EA4E\F018";
+.treeview > .dir > .items > .dir.open > .header[title='Extensions']:before,
+.treeview > .dir > .items > .dir.open > .header[title='Libraries']:before {
+  content: '\EA4E\F018';
 }
 
 /* Objects */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Objects"]:before {
-  content: "\EA6E\F44F";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Objects']:before {
+  content: '\EA6E\F44F';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Objects"]:before {
-  content: "\EA4E\F44F";
+.treeview > .dir > .items > .dir.open > .header[title='Objects']:before {
+  content: '\EA4E\F44F';
 }
 
 /* Timelines */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Timelines"]:before {
-  content: "\EA6E\EDC0";
+.treeview
+  > .dir
+  > .items
+  > .dir:not(.open)
+  > .header[title='Timelines']:before {
+  content: '\EA6E\EDC0';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Timelines"]:before {
-  content: "\EA4E\EDC0";
+.treeview > .dir > .items > .dir.open > .header[title='Timelines']:before {
+  content: '\EA4E\EDC0';
 }
 
 /* Animation Curves */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Animation Curves"]:before {
-  content: "\EA6E\EBC5";
+.treeview
+  > .dir
+  > .items
+  > .dir:not(.open)
+  > .header[title='Animation Curves']:before {
+  content: '\EA6E\EBC5';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Animation Curves"]:before {
-  content: "\EA4E\EBC5";
+.treeview
+  > .dir
+  > .items
+  > .dir.open
+  > .header[title='Animation Curves']:before {
+  content: '\EA4E\EBC5';
 }
 
 /* Shaders */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Shaders"]:before {
-  content: "\EA6E\F3E4";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Shaders']:before {
+  content: '\EA6E\F3E4';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Shaders"]:before {
-  content: "\EA4E\F3E4";
+.treeview > .dir > .items > .dir.open > .header[title='Shaders']:before {
+  content: '\EA4E\F3E4';
 }
 
 /* Scripts */
-.treeview > .dir > .items > .dir:not(.open) > .header[title="Scripts"]:before {
-  content: "\EA6E\ECF8";
+.treeview > .dir > .items > .dir:not(.open) > .header[title='Scripts']:before {
+  content: '\EA6E\ECF8';
 }
-.treeview > .dir > .items > .dir.open > .header[title="Scripts"]:before {
-  content: "\EA4E\ECF8";
+.treeview > .dir > .items > .dir.open > .header[title='Scripts']:before {
+  content: '\EA4E\ECF8';
 }
 
 .context .context-txt::before {
-  font-family: "Remix Icons" !important;
+  font-family: 'Remix Icons' !important;
   display: inline-block;
-  text-align: center; 
+  text-align: center;
   background: none;
-  content: "\EA6E";
+  content: '\EA6E';
   padding-right: 5px !important;
 }
 
 .ace_status-comp .hint::before {
-  font-family: "Remix Icons" !important;
+  font-family: 'Remix Icons' !important;
   display: inline-block;
-  text-align: center; 
+  text-align: center;
   background: none;
-  content: "\EA6E";
+  content: '\EA6E';
   padding-right: 5px !important;
 }
 
@@ -283,10 +318,10 @@
 }
 
 .ace_status-comp:not(:empty)::before {
-  font-family: "Remix Icons" !important;
+  font-family: 'Remix Icons' !important;
   display: inline-block;
-  text-align: center; 
+  text-align: center;
   background: none;
-  content: "\EA6E";
+  content: '\EA6E';
   padding-right: 5px !important;
 }
