@@ -1,6 +1,5 @@
 ## flow-theme
-
-![flow-theme](https://github.com/user-attachments/assets/957cae6c-c069-4a99-ba2c-9a737f406cf6)
+![flow-theme-02](https://github.com/user-attachments/assets/6b7ad3eb-cf71-4e8d-bf6a-4962c4e4da74)
 
 ## Theme installation
 
