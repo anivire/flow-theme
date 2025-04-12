@@ -11,12 +11,6 @@
   border: none !important;
 }
 
-/* .bottom.treeview .dir > .header,
-.bottom.treeview .dir > .dir,
-.bottom.treeview .dir > .dir > .header {
-  border: none !important;
-} */
-
 .header,
 .item {
   padding-top: 5px !important;
@@ -38,16 +32,25 @@
   padding: 5px;
   display: flex;
   align-items: center;
+  /* border-left: 1px solid var(--bg-color-03) !important; */
 }
 
 .treeview .items {
-  padding-left: 15px;
+  padding-left: 12px;
 }
+
+/* .bottom.treeview .items:not(:first-child) {
+  border-left: 1px solid var(--bg-color-03) !important;
+} */
+/* .bottom.treeview .items:not(:first-child) {
+  border-left: 1px solid var(--bg-color-03) !important;
+} */
 
 .treeview .item {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 15px;
+  /* border-left: 1px solid var(--bg-color-03) !important; */
 }
 
 .treeview .item[data-kind='project'] {

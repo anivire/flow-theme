@@ -1,18 +1,18 @@
 {
   "parentTheme": "dark",
   "stylesheets": [
-    "css/root.css",
-    "css/base.css",
-    "css/ace-editor.css",
-    "css/chrome-tabs.css",
-    "css/fonts.css",
-    "css/system.css",
-    "css/treeview.css",
-    "css/ace-status-bar.css",
-    "css/icons.css",
-    "css/linter.css",
-    "ext/gmedit-presence.css",
-    "ext/rainbow-tabs.css"
+    "src/css/root.css",
+    "src/css/base.css",
+    "src/css/ace-editor.css",
+    "src/css/chrome-tabs.css",
+    "src/css/fonts.css",
+    "src/css/system.css",
+    "src/css/treeview.css",
+    "src/css/ace-status-bar.css",
+    "src/css/icons.css",
+    "src/css/linter.css",
+    "src/ext/gmedit-presence.css",
+    "src/ext/rainbow-tabs.css"
   ],
   "backgroundColor": "#090909"
 }

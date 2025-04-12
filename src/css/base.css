@@ -5,7 +5,13 @@
 body {
   background-color: var(--bg-color-01);
   color: var(--fg-color-02);
-  border: 2px solid var(--bg-color-03);
+  /* border-left: 2px solid var(--bg-color-03); */
+  border-right: 2px solid var(--bg-color-03);
+  border-bottom: 2px solid var(--bg-color-03);
+}
+
+.tree-td, #splitter-td {
+  border-bottom: 2px solid var(--bg-color-03) !important;
 }
 
 .treeview .header:hover > span,

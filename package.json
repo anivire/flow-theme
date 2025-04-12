@@ -1,4 +1,9 @@
 {
+  "name": "gmedit-flow-theme",
+  "version": "0.1.3",
+  "description": "GMEdit flow theme",
+  "author": "anivire",
+  "license": "ISC",
   "devDependencies": {
     "prettier": "3.5.3"
   }

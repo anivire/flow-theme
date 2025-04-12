@@ -1,0 +1,10 @@
+.custom-status:after {
+  font-family: 'Remix Icons';
+  color: var(--fg-color-02);
+  display: inline-block;
+  text-align: center;
+  background: none;
+  content: '\EA6E';
+  margin-left: 5px;
+  margin-right: 5px;
+}
