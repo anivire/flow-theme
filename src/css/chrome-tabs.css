@@ -176,6 +176,7 @@
   padding-top: 36px !important;
   transition: background-color 0.2s ease-in-out;
   transition-delay: 300ms, 0ms;
+  border-bottom: 2px solid var(--bg-color-03) !important;
 }
 
 #splitter-td:hover {
